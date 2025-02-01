@@ -4,96 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    .icon{
-        size: 25px;
-        height: 25px;
-    }
-  .body1 {
-  margin: 0;
-  padding: 0;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0px;
-  height: 20vh;
-  text-align: center;
- 
-  font-family: Arial, sans-serif;
-}
-.searchBox {
-  display: flex;
-  text-align: center;
-  width: 5000px;
-  max-width:500000px;
-  align-items: center;
-  justify-content: space-between;
-  gap:300x;
-  background: #2f3640;
-  border-radius: 500px;
-  position: relative;
-  align
-}
-
-.searchButton {
-  color: white;
-  position: absolute;
-  right: 8px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
-  border: 0;
-  display: inline-block;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-}
-/*hover effect*/
-button:hover {
-  color: #fff;
-  background-color: #1A1A1A;
-  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
-  transform: translateY(-3px);
-}
-/*button pressing effect*/
-button:active {
-  box-shadow: none;
-  transform: translateY(0);
-}
-
-.searchBox::placeholder{
-  text-align: center;
-  position: center;
-}
-
-.searchInput {
-  width: 100%;
-
-  text-align: center;
-  border: none;
-  background: none;
-  outline: none;
-  color: white;
-  font-size: 25px;
-  padding: 24px 46px 24px 26px;
-}
 
 
 
 
 
-</style>
-
-
-
-
-<!-- From Uiverse.io by OnlyCodeChannel --> 
 
 <div class="body1">
 <div class="searchBox">
 
     <input class="searchInput" type="text" id="location" name="" placeholder="Enter city">
-    <button class="searchButton" onclick="getWeather()" href="#">
+    <button class="searchButton" onclick="getWeather1()" href="#">
            
                         <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
 <g clip-path="url(#clip0_2_17)">
@@ -119,41 +42,20 @@ button:active {
 </svg>
              
 
-    </button>
 </div>
 </div>
 <body>
+     <p class="buttontext">Want AI Based Summary?</p>
+<label class="switch">
+  <input type="checkbox" id="checkbox">
+  
 
 
+  <div class="slider"></div>
+ 
+</label>
 
-
-
-<!-- <body>
-    
-
-    <div class="input" >
-        <input class="website" id="location" placeholder="enter city location">
-    </div>
-
-
-    
-    <button class="button" onclick="getWeather()">
-        Check now
-        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
-          <path
-            clip-rule="evenodd"
-            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-            fill-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      
-
-    
-     -->
      <div id="result">
-
-     </div>
 </body>
 
 <script src = "script.js"></script>
