@@ -2,6 +2,7 @@
 
 A basic weather app built with **CSS**, **HTML**, and **JavaScript**.
 
+Here's Article link : https://fluff-cement-0d0.notion.site/Javascript-based-Weather-app-18e7acdc62358043ae51f1d7d43d2a19
 ---
 
 ## ❓ Why This? 
